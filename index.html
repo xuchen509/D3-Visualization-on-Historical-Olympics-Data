@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+	<title>Olympics Visualization</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="lib/d3.min.js"></script>	
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	
+</head>
+<body>	
+	<div id="container">
+		<div id="heading">
+			<h1 align = "center">Olympics Visualization</h1>
+			</div>
+		<div id="content_menu">
+			<form id = "season">
+				Season: 
+						<input type="radio" name="season" id ="defaultSeason" value="Summer" checked/>Summer
+						<input type="radio" name="season" id ="winterSeason"  value="Winter"/>Winter
+			</form>
+			<br>
+			<br>
+				Medal:    <select id = "medal">
+							<option value="All" >All</option>
+							<option value="Gold">Gold</option>
+							<option value="Silver">Silver</option>
+							<option value="Bronze">Bronze</option>
+						  </select>
+				<br>
+				<br>
+				Year:  <select id = "yearList"></select>
+				   
+			<br />
+	<br />
+			<br>
+			<br>
+			<br>
+			<div id="slider"></div>
+
+		</div>
+		<div id="content_body">
+			<div id="Div1"> 
+			<label style="font-size: large"><input id="sort" type="checkbox"> Sort values </label>
+			</div>
+			<div id="barchart"></div>
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript" src="scripts/main.js"></script>
+</html>
